@@ -6,7 +6,9 @@
     android:id="@+id/constraint_Layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/b"
     tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/text_action"
@@ -27,5 +29,16 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:layout_width="41dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="16dp"
+        android:rotation="45"
+        android:src="@drawable/f3276f5f_d613_4d6a_9572_585c8d38ed18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
