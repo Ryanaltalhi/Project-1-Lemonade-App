@@ -81,23 +81,31 @@ class MainActivity : AppCompatActivity() {
 
     var LEMON_FUN=LemonTree()
     private fun clickLemonImage() {
-        if (lemonadeState == SELECT) {
+        if (lemonadeState == SELECT)
+        {
             lemonadeState = SQUEEZE
             lemonSize = LEMON_FUN.pick()
             squeezeCount = 0
-        } else
-            if (lemonadeState == SQUEEZE) {
+        }
+        else
+            if (lemonadeState == SQUEEZE)
+            {
                 squeezeCount = squeezeCount + 1
                 lemonSize = lemonSize - 1
-                if(lemonSize==0) {
-                    lemonadeState = DRINK}}
+                if(lemonSize==0)
+                {
+                    lemonadeState = DRINK
+                }
+            }
             else
-                if (lemonadeState==DRINK){
+                if (lemonadeState==DRINK)
+                {
                     lemonadeState=RESTART
                     lemonSize=-1
                 }
                 else
-                    if (lemonadeState==RESTART){
+                    if (lemonadeState==RESTART)
+                    {
                         lemonadeState=SELECT
                     }
         setViewElements()
